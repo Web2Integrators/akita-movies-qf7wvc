@@ -4,9 +4,10 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { MoviesModule } from './movies/movies.module';
-
+import { AkitaNgDevtools } from '@datorama/akita-ngdevtools';
 @NgModule({
-  imports: [BrowserModule, MoviesModule],
+  imports: [BrowserModule, MoviesModule,AkitaNgDevtools.forRoot(),
+   ],
   declarations: [AppComponent],
   bootstrap: [AppComponent]
 })
